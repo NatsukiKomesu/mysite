@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)https://getbootstrap.com/docs/4.3/examples/album/ -->
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+        <meta name="generator" content="Jekyll v3.8.5">
+        <title>Album example · Bootstrap</title>
+         <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
+
+    <!-- Bootstrap core CSS -->
+        <link href="./makeup_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      .modal-middle { 
+        margin: 5% auto;
+      }
+ 
+      .modal-img_footer { 
+        padding: .5em;
+        text-align: center;
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="./makeup_files/album.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.9.0/css/lightbox.min.css" integrity="sha256-iU/Wh1HMAs/NgpurDAu14e7S3FkllcJ5aPnpPDdnO6c=" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.9.0/js/lightbox.min.js" integrity="sha256-9r7DHolfe5aoH+bUj4FEqRBq2tmaIXBxOYUZFalCjSE=" crossorigin="anonymous"></script>
+  </head>
+  
+  <body>
+    <header>
+  <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 class="text-white">About</h4>
+          <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4 class="text-white">Contact</h4>
+          <ul class="list-unstyled">
+            <li><a href="https://getbootstrap.com/docs/4.3/examples/album/#" class="text-white">Follow on Twitter</a></li>
+            <li><a href="https://getbootstrap.com/docs/4.3/examples/album/#" class="text-white">Like on Facebook</a></li>
+            <li><a href="https://getbootstrap.com/docs/4.3/examples/album/#" class="text-white">Email me</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container d-flex justify-content-between">
+      <a href="https://getbootstrap.com/docs/4.3/examples/album/#" class="navbar-brand d-flex align-items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="mr-2" viewBox="0 0 24 24" focusable="false"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+        <strong>Natsuki Komesu</strong>
+      </a>
+      <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="Album example · Bootstrap.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="me.html">About Me</a></li>
+            <li class="breadcrumb-item"><a href="makeup.html">Make Up</a></li>
+            <li class="breadcrumb-item"><a href="https://instagram.com/ushidofu?igshid=13o4736hnsy9f">instagram</a></li>
+          </ol>
+        </nav>
+    </div>
+  </div>
+</header>
+
+<main role="main">
+
+  <section class="jumbotron text-center">
+    <div class="container">
+      <h1 class="jumbotron-heading">My cosme</h1>
+      <p class="lead text-muted">コスメジャンキーのポーチの中。まだまだ増えます。</p>
+      
+    </div>
+  </section>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+            <div class="card-body">
+              <a href="makeup.jpg" data-lightbox="group01" /><img src="makeup.jpg" width="100%" height="225"" alt=""></a>
+              <small class="text-muted">M.A.Cのルージュ。色持ちがよく鮮やかな発色。深みのある赤なので肌の透明感を引き立たせてくれます。</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+              <div class="card-body">
+                <a href="skinfood.jpg" data-lightbox="group01" /><img src="skinfood.jpg" width="100%" height="225"" alt=""></a>
+                <small class="text-muted">Skin Foodのリップ＆チーク。ローズピンクなのでイエベにもブルべにもナチュラルになじみます。クリームチークにもなり、自然な血色感を作ってくれます。</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+                <div class="card-body">
+                  <a href="mackona.jpg" data-lightbox="group01" /><img src="mackona.jpg" width="100%" height="225"" alt=""></a>
+                  <small class="text-muted">M.A.Cの2019年春コレクションのパウダー。表面は光沢のあるピンクでチークに。パウダーも薄ピンクのきめ細かい使用感でくすみをうまく出してくれます。</small>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                  <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+                  <div class="card-body">
+                    <a href="IMG_7826.JPG"group01" /><img src="IMG_7826.JPG" width="100%" height="225"" alt=""></a>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="card mb-4 shadow-sm">
+                    <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+                    <div class="card-body">
+                      <a href="rmk1.jpg" data-lightbox="group01" /><img src="rmk1.jpg" width="100%" height="225"" alt=""></a>
+                      <small class="text-muted">9 mins</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                      <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+                      <div class="card-body">
+                        <a href="rmk2.jpg" data-lightbox="group01" /><img src="rmk2.jpg" width="100%" height="225"" alt=""></a>
+                        <small class="text-muted">9 mins</small>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                      <div class="card mb-4 shadow-sm">
+                        <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+                        <div class="card-body">
+                          <a href="rmk3.jpg" data-lightbox="group01" /><img src="rmk3.jpg" width="100%" height="225"" alt=""></a>
+                          <small class="text-muted">9 mins</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                          <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+                          <div class="card-body">
+                            <a href="rmk４.jpg" data-lightbox="group01" /><img src="rmk４.jpg" width="100%" height="225"" alt=""></a>
+                            <small class="text-muted">9 mins</small>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                          <div class="card mb-4 shadow-sm">
+                            <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+                            <div class="card-body">
+                              <a href="rmk5.jpeg.jpg" data-lightbox="group01" /><img src="rmk5.jpeg.jpg" width="100%" height="225"" alt=""></a>
+                              <small class="text-muted">9 mins</small>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-4 shadow-sm">
+                              <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+                              <div class="card-body">
+                                <a href="nail.jpg" data-lightbox="group01" /><img src="nail.jpg" width="100%" height="225"" alt=""></a>
+                                <small class="text-muted">9 mins</small>
+                              </div>
+                            </div>
+                          </div>
+                              <div class="col-md-4">
+                                  <div class="card mb-4 shadow-sm">
+                                    <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+                                    <div class="card-body">
+                                      <a href="pink.jpg" data-lightbox="group01" /><img src="pink.jpg" width="100%" height="225"" alt=""></a>
+                                      <small class="text-muted">9 mins</small>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card mb-4 shadow-sm">
+                                      <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+                                      <div class="card-body">
+                                        <a href="blue.jpg" data-lightbox="group01" /><img src="blue.jpg" width="100%" height="225"" alt=""></a>
+                                        <small class="text-muted">9 mins</small>
+                                      </div>
+                                    </div>
+                                  </div>
+
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="text-muted">
+  <div class="container">
+    <p class="float-right">
+      <a href="https://getbootstrap.com/docs/4.3/examples/album/#">Back to top</a>
+    </p>
+    <p>Album example is © Bootstrap, but please download and customize it for yourself!</p>
+    <p>New to Bootstrap? <a href="https://getbootstrap.com/">Visit the homepage</a> or read our <a href="https://getbootstrap.com/docs/4.3/getting-started/introduction/">getting started guide</a>.</p>
+  </div>
+</footer>
+<script src="./makeup_files/jquery-3.3.1.slim.min.js.ダウンロード" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="./makeup_files/bootstrap.bundle.min.js.ダウンロード" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+
+</body></html>

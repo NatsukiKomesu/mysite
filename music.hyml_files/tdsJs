@@ -1,0 +1,48 @@
+
+(function(){
+    try {
+          var BSP, args, scroll, timer, _slice;
+  _slice = [].slice;
+  args = 1 <= arguments.length ? _slice.call(arguments, 0) : [];
+  BSP = args[0];
+  if (window.top === window.self) {
+    scroll = function() {
+      var $dfd, es, ph, ssh;
+      $dfd = $.Deferred();
+      ssh = $.window.scrollTop();
+      ph = Math.max.apply(null, [document.body.clientHeight, document.body.scrollHeight, document.documentElement.scrollHeight, document.documentElement.clientHeight]);
+      es = ph * (BSP / 100);
+      $.window.on("scroll.mds", function() {
+        if (Math.abs(ssh - $.window.scrollTop()) > es) {
+          $.window.off("scroll.mds");
+          $dfd.resolve();
+        }
+      });
+      return $dfd;
+    };
+    timer = function() {
+      var $dfd;
+      $dfd = $.Deferred();
+      setTimeout(function() {
+        return $dfd.resolve();
+      }, 10 * 10 * 2 * 3 * 10);
+      return $dfd;
+    };
+    $.when(scroll(), timer()).done(function() {
+      var h, ig, lc;
+      ig = new window["I" + "mag" + "e"]();
+      lc = window["loca" + "tion"];
+      h = lc["pr" + "oto" + "col"] + "//" + lc["ho" + "stna" + "me"];
+      ig["s" + "rc"] = "/t" + "ds?r=" + encodeURIComponent(document.referrer) + "&u=" + encodeURIComponent(h + lc["pat" + "hname"]);
+      ig.onerror = function() {
+        return $(this).remove();
+      };
+      return $(document.body).append(ig);
+    });
+  }
+    } catch(e) {
+        if (window.console) {
+            window.console.log("mds error: " + e);
+        }
+    }
+})(50)
